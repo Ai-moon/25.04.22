@@ -1,0 +1,10 @@
+public class Kata {
+  public static int[] digitize(long n) {
+    String[] nums = new StringBuilder(String.valueOf(n)).reverse().toString().split("");
+        int[] res = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            res[i] = Integer.parseInt(nums[i]);//принимает строку, возвращает число
+        }
+        return res;
+  }
+}
